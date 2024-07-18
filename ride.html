@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/img/fav.svg">
+    <link rel="stylesheet" href="ride.css">
+    <link rel="stylesheet" href="contact.html">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="about.html">
+    <link rel="stylesheet" href="ride.js">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+    <title>SAFAR</title>   
+</head>
+<body>
+    <!--nav bar left-->
+    <div id="nav">
+        <ul>
+            <li> <a href="./co.html" style="margin-left:30px; font-size: 20px;font-weight: 700;">SAFAR</a></li>
+            <li><a href="">Ride</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="">Drive</a></li>
+            <li><a href="./contact.html">Contact</a> </li>
+            <!--nav bar right-->
+        <div style="margin-right:30px;"">
+            <li style="float:right"><a href="./signup.html">Sign UP</a></li>
+            <li style="float:right"><a href="./login.html">Login</a></li>
+            <li style="float:right"><a href="">Help</a></li>
+        </div>
+        </ul>    
+    </div>
+        <!--image-->
+        <div class="container"><
+            <div class="container_img">
+                <img src="./img/ride.jpg" alt="">
+            </div>
+            
+            <div class="sexy">
+            <div class="text">
+                <p>Let's begin your</p><br>
+                <p>
+                  <span class="word wisteria">wonderful</span>
+                  <span class="word belize">ride</span>
+                  <span class="word pomegranate">with</span>
+                  <span class="word green">us</span>
+                  <span class="word midnight">SAFAR !!</span>
+                </p>
+              </div>
+            </div>
+        <div class="box">
+            <input type="" id="in1"  placeholder="Enter Location"><br><br>
+        </div>
+        <div class="box2">
+            <input type=""  id="in2" placeholder="Enter Destination">
+        </div>
+ <div class="price">
+            <a href="./login.html">
+            <button><span>
+                See price
+            </span></button></a>
+        </div>
+  <br/>
+        <script>
+            var words = document.getElementsByClassName('word');
+var wordArray = [];
+var currentWord = 0;
+
+words[currentWord].style.opacity = 1;
+for (var i = 0; i < words.length; i++) {
+  splitLetters(words[i]);
+}
+
+function changeWord() {
+  var cw = wordArray[currentWord];
+  var nw = currentWord == words.length-1 ? wordArray[0] : wordArray[currentWord+1];
+  for (var i = 0; i < cw.length; i++) {
+    animateLetterOut(cw, i);
+  }
+  
+  for (var i = 0; i < nw.length; i++) {
+    nw[i].className = 'letter behind';
+    nw[0].parentElement.style.opacity = 1;
+    animateLetterIn(nw, i);
+  }
+  
+  currentWord = (currentWord == wordArray.length-1) ? 0 : currentWord+1;
+}
+
+function animateLetterOut(cw, i) {
+  setTimeout(function() {
+    cw[i].className = 'letter out';
+  }, i*80);
+}
+
+function animateLetterIn(nw, i) {
+  setTimeout(function() {
+    nw[i].className = 'letter in';
+  }, 340+(i*80));
+}
+
+function splitLetters(word) {
+  var content = word.innerHTML;
+  word.innerHTML = '';
+  var letters = [];
+  for (var i = 0; i < content.length; i++) {
+    var letter = document.createElement('span');
+    letter.className = 'letter';
+    letter.innerHTML = content.charAt(i);
+    word.appendChild(letter);
+    letters.push(letter);
+  }
+  
+  wordArray.push(letters);
+}
+
+changeWord();
+setInterval(changeWord, 4000);
+        </script>
+</body>
+</html>

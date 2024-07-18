@@ -1,0 +1,213 @@
+body,html{
+  background-color: black;
+    margin-left:1%;
+    margin-right:1%;
+    margin-bottom:1%;
+    margin-top:1%;
+    }
+@keyframes mymove {
+    from {left: 0px;}
+    to {left: 50px;}
+}
+#nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    /* background-color: rgb(214, 112, 214); */
+    position: fixed;
+    top: 0;
+    width: 100%;
+    font-family: "Sofia", sans-serif;
+    
+}
+
+#nav li {
+    float: left;
+    display: block;
+    /* color: rgb(214, 112, 214); */
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+#nav ul li a{
+    text-decoration: none;
+    /* color: rgb(214, 112, 214); */
+    font-size: 18px;
+    font-weight: 70;
+}
+#nav ul a:hover{
+    color: rgb(214, 112, 214);
+    text-shadow: 4px 4px 4px purple;
+}
+.container_img img{
+    margin-top: 8rem;
+    margin-right:16rem ;
+    width: 30%;
+    height: 10%;
+    border: 1px solid white;
+    padding: 7px;
+    float: right;
+    display: flex;
+    position: relative;
+    /* animation: mymove 6s infinite; */
+}
+.box{
+    margin-top: 22rem;
+    color: white;
+}
+.box2{
+    margin-top: 2rem;
+    color: white;
+}
+.box input{
+    width: 20rem;
+    height: 2.3rem;
+    margin-left:42rem ;
+    margin-top:5rem; 
+    border-radius: 10px;
+    padding-right: 10rem;
+}
+.box2 input{
+   
+    width: 25rem;
+    height: 2.3rem;
+    margin-left:42rem ;
+    border-radius: 10px;
+    padding-right: 10rem;
+}
+::placeholder{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1rem;
+}
+.price button {
+    margin-left: 15rem;
+     margin-top: 3rem;
+    
+    width: 14rem;
+    height: 2.5rem;
+      border-radius:10px; 
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1rem;
+    text-align: center;
+    font-weight: 1000;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+.price button:hover{
+    background-color: rgb(171, 123, 174);
+    box-shadow: purple;
+}
+.price button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.price button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+ 
+.price button:hover span {
+    padding-right: 35px;
+}
+.price button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+.box #in1{
+    background-image: url('/img/current-location.svg');
+    background-repeat: no-repeat;
+    padding-left: 3rem;
+    background-size: 1.6rem;
+    padding-top: 6px;
+    margin-top: 8px;
+    
+}
+.box2 #in2{
+    background-image: url('/img/destination.svg');
+    background-repeat: no-repeat;
+    padding-left: 3rem;
+    background-size: 2.2rem;
+    padding-top: 6px;
+}
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:600);
+
+.sexy {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-size: 40px;
+  margin-top: 10rem;
+  margin-left: 10rem;
+  color: white;
+}
+
+.text {
+    position: absolute;
+    width: 450px;
+    margin-left: 4rem;
+    height: 40px;
+    margin-top: 3rem;
+}
+
+.text p {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0;
+}
+
+.word {
+  position: absolute;
+  width: 220px;
+  opacity: 0;
+}
+
+.letter {
+  display: inline-block;
+  position: relative;
+  /* float : left; */
+  transform: translateZ(25px);
+  transform-origin: 50% 50% 25px;
+}
+
+.letter.out {
+  transform: rotateX(90deg);
+  transition: transform 0.32s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+
+.letter.behind {
+  transform: rotateX(-90deg);
+}
+
+.letter.in {
+  transform: rotateX(0deg);
+  transition: transform 0.38s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.wisteria {
+  color: #8e44ad;
+}
+
+.belize {
+  color: #2980b9;
+}
+
+.pomegranate {
+  color: #c0392b;
+}
+
+.green {
+  color: #16a085;
+}
+
+.midnight {
+  color: rgb(191, 91, 191);
+}
+
