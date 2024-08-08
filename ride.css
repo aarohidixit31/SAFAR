@@ -1,10 +1,13 @@
+
 body,html{
   background-color: black;
     margin-left:1%;
     margin-right:1%;
     margin-bottom:1%;
     margin-top:1%;
+    font-family: "Urbanist", sans-serif;
     }
+
 @keyframes mymove {
     from {left: 0px;}
     to {left: 50px;}
@@ -18,14 +21,14 @@ body,html{
     position: fixed;
     top: 0;
     width: 100%;
-    font-family: "Sofia", sans-serif;
+    font-family: "Urbanist", sans-serif;
     
 }
 
 #nav li {
     float: left;
     display: block;
-    /* color: rgb(214, 112, 214); */
+    color: rgb(54, 7, 54);
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -35,12 +38,13 @@ body,html{
     /* color: rgb(214, 112, 214); */
     font-size: 18px;
     font-weight: 70;
+    color: purple;
 }
-#nav ul a:hover{
-    color: rgb(214, 112, 214);
-    text-shadow: 4px 4px 4px purple;
+#nav ul a a:hover{
+    color: rgb(54, 8, 54);
+    text-shadow: 4px 4px 4px rgb(23, 4, 23);
 }
-.container_img img{
+/* .container_img img{
     margin-top: 8rem;
     margin-right:16rem ;
     width: 30%;
@@ -50,8 +54,7 @@ body,html{
     float: right;
     display: flex;
     position: relative;
-    /* animation: mymove 6s infinite; */
-}
+} */
 .box{
     margin-top: 22rem;
     color: white;
@@ -77,8 +80,9 @@ body,html{
     padding-right: 10rem;
 }
 ::placeholder{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
     font-size: 1rem;
+    font-family: "Urbanist", sans-serif;
 }
 .price button {
     margin-left: 15rem;
@@ -86,8 +90,9 @@ body,html{
     
     width: 14rem;
     height: 2.5rem;
-      border-radius:10px; 
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      border-radius:10px;
+      font-family: "Urbanist", sans-serif; 
+    /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
     font-size: 1rem;
     text-align: center;
     font-weight: 1000;
@@ -95,8 +100,10 @@ body,html{
     cursor: pointer;
 }
 .price button:hover{
-    background-color: rgb(171, 123, 174);
+    /* background-color: rgb(171, 123, 174); */
     box-shadow: purple;
+    background-color: #9a4fb9;
+    
 }
 .price button span {
     cursor: pointer;
@@ -141,7 +148,7 @@ body,html{
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:600);
 
 .sexy {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Urbanist", sans-serif;
   font-weight: 600;
   font-size: 40px;
   margin-top: 10rem;
@@ -210,4 +217,3 @@ body,html{
 .midnight {
   color: rgb(191, 91, 191);
 }
-
