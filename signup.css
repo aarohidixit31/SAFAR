@@ -3,7 +3,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Sofia", sans-serif;
+  font-family: "Urbanist", sans-serif;
+  /* font-family: "Sofia", sans-serif; */
 }
 body {
   display: flex;
@@ -13,11 +14,12 @@ body {
   background: #111;
   width: 100%;
   overflow: hidden;
+  font-family: "Urbanist", sans-serif;
 }
 .ring {
   position: relative;
-  width: 650px;
-  height: 650px;
+  width: 640px;
+  height: 640px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -73,7 +75,8 @@ body {
 .login h2 {
   font-size: 2.4em;
   color: purple;
-  font-family: "Sofia", sans-serif;
+  font-family: "Urbanist", sans-serif;
+  /* font-family: "Sofia", sans-serif; */
 }
 .login .inputBx {
   position: relative;
@@ -94,7 +97,7 @@ body {
 .login .inputBx input[type="submit"] {
   width: 100%;
   background: #0078ff;
-  background: linear-gradient(45deg, #ff357a, #fff172);
+  background: linear-gradient(45deg, #c64ae9, #2e0130);
   border: none;
   cursor: pointer;
 }
@@ -112,4 +115,52 @@ body {
 .login .links a {
   color: #fff;
   text-decoration: none;
+}
+.arrow {
+  position: absolute;
+  /* top: 100%; */
+  /* left: 50%; */
+  /* margin-top: 4rem; */
+  /* margin-left: 5rem; */
+  margin-bottom: 35rem;
+  margin-right: 80rem;
+  transform: translate(-20%, -20%);
+  transform: rotate(90deg);
+  cursor: pointer;
+  color: white;
+
+}
+
+.arrow span {
+  display: block;
+  width: 1vw;
+  height: 1vw;
+  border-bottom: 5px solid white;
+  border-right: 5px solid white;
+  transform: rotate(45deg);
+  margin: -10px;
+  animation: animate 6s infinite;
+}
+
+.arrow span:nth-child(2) {
+  animation-delay: -0.4s;
+}
+
+.arrow span:nth-child(3) {
+  animation-delay: -0.6s;
+} 
+
+@keyframes animate {
+  0% {
+      opacity: 0;
+      transform: rotate(45deg) translate(-20px, -20px);
+  }
+  50% {
+      opacity: 1;
+  }
+  100% {
+      opacity: 0;
+      transform: rotate(45deg) translate(20px, 20px);
+  }
+ 
 }
